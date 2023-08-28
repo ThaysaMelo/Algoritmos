@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    // Criar um programa que verifique se um número é divisor por outro 
+    inteiro valor1, valor2, resto = 0
+
+    escreva("Olá, vamos verificar se um valor é divisor de outro. Digite dois valores: \n")
+    leia(valor1)
+    escreva("\nDigite o segundo valor: ")
+    leia(valor2)
+
+    se(valor1 > valor2){
+        resto = valor1 % valor2
+    }
+
+    se(valor2 > valor1){
+        resto = valor2 % valor1
+    }
+
+    se(resto == 0){
+        escreva("\nÉ divisor!")
+    }
+
+    se(resto != 0){
+        escreva("\nNão é divisor!")
+    }
+  }
+}
